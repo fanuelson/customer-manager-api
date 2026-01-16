@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: customer-manager-api
+  main:
+    banner-mode: off
+  # Datasource Configuration
+  datasource:
+    url: jdbc:h2:mem:localdb;INIT=CREATE SCHEMA IF NOT EXISTS app
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  # H2 Console (desenvolvimento)
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      mode: always
+  # JPA Configuration
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
