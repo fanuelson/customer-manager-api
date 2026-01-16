@@ -10,7 +10,7 @@ CREATE TABLE customer
 (
     id         BIGINT AUTO_INCREMENT PRIMARY KEY,
     full_name  VARCHAR    NOT NULL,
-    gender     VARCHAR(5) NOT NULL,
+    gender     VARCHAR(20) NOT NULL,
     birth_date DATE       NOT NULL,
     city_id    BIGINT     NOT NULL
 
